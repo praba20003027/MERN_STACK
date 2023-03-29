@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <style>
+        .container{
+top: 0px;
+left: 0px;
+width: 1366px;
+height: 80px;
+background: #CE0505 0% 0% no-repeat padding-box;
+opacity: 1;
+border-radius: 50;
+}
+.circle{
+    align-self:center;
+top: 15px;
+left: 102px;
+width: 52px;
+height: 52px;
+border-radius: 50%;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+opacity: 1;
+position: relative;
+}
+.content{
+    top: 16px;
+left: 112px;
+width: 40px;
+height: 50px;
+/* UI Properties */
+text-align:right;
+font: normal normal 600 33px/50px Poppins;
+letter-spacing: 0px;
+color: #EB2929;
+opacity: 1;
+
+}
+.login{
+    top:  40px;
+left: 1015px;
+width: 43px;
+height: 23px;
+/* UI Properties */
+text-align:center;
+font: normal normal medium 16px/25px Poppins;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+position:absolute;
+top:9%;
+left:65%;
+}
+.rectangle{
+    top: 17px;
+left: 1084px;
+width: 181px;
+height: 46px;
+/* UI Properties */
+border: 1px solid #FFFFFF;
+border-radius: 3px;
+opacity: 1;
+position:absolute;
+top:6.5%;
+left:69%
+
+}
+.account{
+    top: 29px;
+left: 1099px;
+width: 152px;
+height: 23px;
+/* UI Properties */
+text-align: center;
+font: normal normal medium 16px/25px Poppins;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1
+
+
+}
+.place{
+    top: 117px;
+left: 113px;
+width: 514px;
+height: 51px;
+/* UI Properties */
+text-align: right;
+font: normal normal bold 36px/55px Poppins;
+letter-spacing: 0px;
+color: #192F60;
+opacity: 1;
+
+}
+.filter{
+    top: 195px;
+left: 113px;
+width: 260px;
+height: 682px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+opacity: 1;
+}
+.filteroption{
+    top: 195px;
+left: 113px;
+width: 260px;
+height: 682px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+opacity: 1;
+}
+.A{
+    top: 212px;
+left: 139px;
+width: 55px;
+height: 25px;
+/* UI Properties */
+text-align:right;
+font: normal normal 600 18px/27px Poppins;
+letter-spacing: 0px;
+color: #192F60;
+opacity: 1;
+position:absolute;
+left:30px;
+top:225px;
+}
+.b{
+    /* Layout Properties */
+top: 247px;
+left: 140px;
+width: 106px;
+height: 20px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/21px Poppins;
+letter-spacing: 0px;
+color: #192F60;
+opacity: 1;
+position: absolute;
+top:37%;
+left:2.8%
+}
+.cus{
+    top: 335px;
+left: 140px;
+width: 52px;
+height: 20px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/21px Poppins;
+letter-spacing: 0px;
+color: #183b87;
+opacity: 1;
+position:absolute;
+top:47%;
+left:2.8%;
+}
+.option{
+    
+
+    text-align: left;
+font: normal normal normal 14px/21px Poppins;
+letter-spacing: 0px;
+color: #8C96AB;
+opacity: 1;
+position:absolute;
+top: 51%;
+left:2.5%
+}
+.cost{
+    top: 544px;
+left: 140px;
+width: 89px;
+height: 20px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/21px Poppins;
+letter-spacing: 0px;
+color: #192F60;
+opacity: 1;
+position:absolute;
+top:68%;
+left:2.8%;
+
+}
+.price{
+    /* Layout Properties */
+    top: 675px;
+left: 169px;
+width: 115px;
+height: 20px;
+
+/* UI Properties */
+text-align: left;
+letter-spacing: 0px;
+color: #8C96AB;
+opacity: 1;
+position: absolute;
+top:72%;
+left:2.5%
+}
+.sort{
+    /* Layout Properties */
+top: 756px;
+left: 139px;
+width: 37px;
+height: 25px;
+/* UI Properties */
+text-align: left;
+font: normal normal 600 18px/27px Poppins;
+letter-spacing: 0px;
+color: #12347e;
+opacity: 1;
+position: absolute;
+top: 87%;
+left:2.8%;
+}
+.Dr{
+    top: 796px;
+left: 169px;
+width: 125px;
+height: 25px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/21px Poppins;
+letter-spacing: 0px;
+color: #8C96AB;
+opacity: 1;
+position: absolute;
+top:92%;
+left:2.5%;
+}
+.breakfast{
+    top: 195px;
+left: 418px;
+width: 794px;
+height: 291px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+opacity: 1;
+position:absolute;
+top: 32%;
+left:25%;
+}
+.image1{
+    top: 220px;
+left: 453px;
+width: 120px;
+height: 120px;
+/* UI Properties */
+opacity: 1;
+position:absolute;
+top:35%;
+left:28%;
+border-radius: 45% ;
+}
+.image2{
+    top: 219px;
+left: 411px;
+width: 135px;
+height: 115px;
+/* UI Properties */
+background: transparent url('img/shutterstock_1154073754.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+border-radius: 20% 20% 20% 20%;
+}
+.chill{
+    top: 234px;
+left: 614px;
+width: 303px;
+height: 43px;
+/* UI Properties */
+text-align: left;
+font: normal normal 600 20px/46px Poppins;
+letter-spacing: 0px;
+color: #192F60;
+opacity: 1;
+position:absolute;
+top:33%;
+left:43%;
+}
+.fort{
+    /* Layout Properties */
+top: 282px;
+left: 619px;
+width: 40px;
+height: 23px;
+/* UI Properties */
+text-align: left;
+font: normal normal medium 16px/30px Poppins;
+letter-spacing: 0px;
+color: #192F60;
+opacity: 1;
+position:absolute;
+top:41%;
+left:43.4%;
+}
+.address{
+    /* Layout Properties */
+top: 310px;
+left: 619px;
+width: 370px;
+height: 23px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 16px/30px Poppins;
+letter-spacing: 0px;
+color: #636F88;
+opacity: 1;
+position:absolute;
+top:44%;
+left:43.4%;
+}
+.line{
+    /* Layout Properties */
+top: 371px;
+left: 453px;
+width: 726px;
+height: 0px;
+/* UI Properties */
+border: 0.5px solid #DEDFE5;
+opacity: 1;
+position:absolute;
+top:55%;
+left:28%;
+}
+.tally{
+    /* Layout Properties */
+top: 397px;
+left: 458px;
+width: 140px;
+height: 118px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 16px/3px Poppins;
+letter-spacing: 0px;
+color: #636F88;
+opacity: 1;
+position:absolute ;
+top:58%;
+left:30%;
+}
+.pri{
+     
+top: 397px;
+left: 634px;
+width: 251px;
+height: 69px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 16px/3px Poppins;
+letter-spacing: 0px;
+color: #192F60;
+opacity: 1;
+position:absolute;
+top:58%;
+left:43%;
+}
+.breakfast2{
+    /* Layout Properties */
+top: 520px;
+left: 418px;
+width: 794px;
+height: 291px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+opacity: 1;
+position: absolute;
+top:78%;
+left:25%;
+}
+.photo{
+    top: 545px;
+left: 453px;
+width: 120px;
+height: 120px;
+/* UI Properties */
+opacity: 1;
+border-radius: 45% ;
+
+}
+.photo2{
+    /* Layout Properties */
+    top: 219px;
+left: 411px;
+width: 135px;
+height: 115px;
+/* UI Properties */
+background: transparent url('img/shutterstock_1154073754.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+border-radius: 20% 20% 20% 20%;
+position:absolute;
+top:81%;
+left:28%;
+}
+.chill2{
+    top: 234px;
+left: 614px;
+width: 303px;
+height: 43px;
+/* UI Properties */
+text-align: left;
+font: normal normal 600 20px/46px Poppins;
+letter-spacing: 0px;
+color: #192F60;
+opacity: 1;
+position:absolute;
+top:78%;
+left:43%;
+
+}
+.fort2{
+     /* Layout Properties */
+top: 282px;
+left: 619px;
+width: 40px;
+height: 23px;
+/* UI Properties */
+text-align: left;
+font: normal normal medium 16px/30px Poppins;
+letter-spacing: 0px;
+color: #192F60;
+opacity: 1;
+position:absolute;
+top:86%;
+left:43.4%;
+
+}
+.address2{
+    top: 310px;
+left: 619px;
+width: 370px;
+height: 23px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 16px/30px Poppins;
+letter-spacing: 0px;
+color: #636F88;
+opacity: 1;
+position:absolute;
+top:89%;
+left:43.4%;
+
+}
+.line2{
+    /* Layout Properties */
+top: 371px;
+left: 453px;
+width: 726px;
+height: 0px;
+/* UI Properties */
+border: 0.5px solid #DEDFE5;
+opacity: 1;
+position:absolute;
+top:102%;
+left:28%;
+}
+.tally2{
+    /* Layout Properties */
+top: 397px;
+left: 458px;
+width: 140px;
+height: 118px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 16px/3px Poppins;
+letter-spacing: 0px;
+color: #636F88;
+opacity: 1;
+position:absolute ;
+top:105%;
+left:30%;
+}
+.pri2{
+     
+top: 397px;
+left: 634px;
+width: 251px;
+height: 69px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 16px/3px Poppins;
+letter-spacing: 0px;
+color: #192F60;
+opacity: 1;
+position:absolute;
+top:105%;
+left:43%;
+}
+
+
+.box{
+    top: 849px;
+left: 650px;
+width: 330px;
+height: 36px;
+/* UI Properties */
+opacity: 1;
+position:absolute;
+top:125%;
+left:55%;
+}
+
+#a{
+    top: 854px;
+left: 760px;
+width: 12px;
+height: 28px;
+/* UI Properties */
+text-align: left;
+font: normal normal medium 20px/30px Poppins;
+letter-spacing: 0px;
+color: #8C96AB;
+opacity: 1;
+}
+.previous{
+    top: 849px;
+left: 650px;
+width: 36px;
+height: 36px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #8C96AB;
+border-radius: 7px;
+opacity: 0.4;
+}
+.next{
+    top: 849px;
+left: 944px;
+width: 36px;
+height: 36px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #8C96AB;
+border-radius: 7px;
+opacity: 1
+
+}
+.kk{
+    top: 849px;
+left: 747px;
+width: 36px;
+height: 36px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #8C96AB;
+border-radius: 7px;
+opacity: 1;
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="circle">
+       
+            <p class="content">e!</p>
+        
+    </div>
+<p1 class="login">Login</p1>
+<div class="rectangle">
+    <p class="account">Creat an account</p>
+</div>
+    </div>
+    <div2><h1 class="place">Breakfast places in Mumbai</h1></div2>
+</br>
+    <div3><div class="filteroption"><p class="A">Filters</p></div>
+    <div class="b"><lable>Select Location</lable>
+    </br>
+        <input type="text" id="select location" placeholder="Select Location">
+        
+        <select></select></div>
+</br>
+        <div class="cus"><lable>Cuisine</lable>
+    </div>
+        </br>
+        <div class="option">
+    
+        <input type="checkbox"  >
+        North India
+</br>
+        <input type="checkbox"  >
+        South India
+    </br>
+      
+        <input type="checkbox" >
+        Chinese
+    </br>
+      
+        <input type="checkbox" >
+        Fast Food
+    </br>
+      
+        <input type="checkbox" >
+        Street Food
+
+
+       </div>
+       <div class="cost"><label>Cost For Two</label></div>
+       <div class="price">
+        <input type="radio">
+        Less than 500
+       </br>
+        
+        <input type="radio">
+        500 to 1000
+    </br>
+        <input type="radio">
+        1000 to 1500
+</br>
+        <input type="radio">
+        1500 to 2000
+</br>
+        <input type="radio">
+        2000+
+
+    </div>
+    
+
+<div class="sort"><label>Sort</label></div>
+<div class="Dr">
+ <input type="radio">
+ Price low to high
+</br>
+ 
+ <input type="radio">
+ Price high to low
+ </div>
+    </div3>
+
+    <div4 ><div class="breakfast"></div>
+        <div class="image1">
+            <img class="image2" src="shutterstock_1154073754.png"  border-radius="50%">
+        </div>
+        <div class="chill"><h2>The Big Chill Cakery</h2></div>
+        <div class="fort"><p>Fort</p></div>
+        <div class="address"><p>Shop 1,Plot D,Samruddhi Complex,chincholi...</p></div>
+        <div class="line"></div>
+        <div class="tally"><p>CUISINES:</p></br><P>COST FOR TWO:</P></div>
+        <div class="pri"><p>Bakery</p></br><p>700₹</p></div>
+     </div4>
+     <div5>
+        <div class="breakfast2"></div>
+        <div class="photo">
+            <img class="photo2" src="shutterstock_1154073754@2x.png"  >
+        </div>
+        <div class="chill2"><h2>The Bake Shop</h2></div>
+        <div class="fort2"><p>Fort</p></div>
+        <div class="address2"><p>Shop 1,Plot D,Samruddhi Complex,chincholi...</p></div>
+        <div class="line2"></div>
+        <div class="tally2"><p>CUISINES:</p></br><P>COST FOR TWO:</P></div>
+        <div class="pri2"><p>Bakery</p></br><p>700₹</p></div>
+     </div5>
+     <div6 class="box">
+        <u1>
+        <div class="border"><a href="#" class="previous"></a>
+            
+            <a href="#" class="kk">1</a></li>
+            <a  href="#"class="kk">2</a></li>
+            <a  href="#"class="kk">3</a></li>
+            <a  href="#"class="kk">4</a></li>
+            <a  href="#" class="kk">5</a></li>
+            <a href="#" class="next">></a>
+        </u1>
+       
+        
+        </div>
+    </div6>
+</body>
+</html>

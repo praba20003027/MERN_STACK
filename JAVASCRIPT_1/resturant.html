@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     class restaurantform {
+    restaurantList = [{ restaurantName: 'Taj', address: 'chennai airport', city: 'chennai'},
+                      {  restaurantName: 'Arabian',address: 'golgonda masuq',city: 'hydrabadh'},
+                      { restaurantName: 'dominos',address: 'delhi airport',city: 'delhi' },
+                     {  restaurantName: 'kfc',address: 'mumbai airport',city: 'Mumbai'}]
+
+    Resturantsnameslist = () => {
+        return this.restaurantList.map(restaurant => restaurant.restaurantName);
+    }
+    
+
+   filterresturant = (cityName) => {
+        return this.restaurantList.filter(restaurant => restaurant.city == cityName);
+    }
+}
+
+const restaurantObj = new restaurantform ();
+restaurantObj. Resturantsnameslist();  
+console.log(restaurantObj. Resturantsnameslist())     
+restaurantObj.filterresturant('delhi');
+console.log(restaurantObj.filterresturant('delhi'))
+
+    
+     </script>
+</body>
+</html>
